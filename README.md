@@ -2,6 +2,8 @@
 
 > 本文档为该工作区的中文说明与总结，包含如何生成/搭建工作区、快速开始、项目结构、模型与数据说明、使用与训练的高层指导、以及重要的伦理与免责声明。
 
+演示视频链接：https://www.bilibili.com/video/BV11j2LYgEES/?spm_id_from=333.1387.upload.video_card.click&vd_source=651861c655db2f667279db276cd27b4a
+
 ## 项目概述
 
 这是一个基于 YOLOv10 的学习/实验项目（作者用于学习和小规模实验）。仓库包含训练、推理和若干演示脚本（例如 `app.py`, `predict.py`, `train.py`），以及作者用于研究目的收集的数据示例。仓库内也包含若干预训练权重文件（如 `yolov10s.pt` 等），用于快速验证与推理。
@@ -119,7 +121,3 @@ yolo detect train data=dataset.yaml model=yolov10s.yaml epochs=200 batch=32 imgs
 ## 致谢
 
 本仓库参考并基于原始的 YOLOv10 实现与论文，感谢上游作者与社区贡献。
-
----
-
-如果你希望我把该中文 README 内容合并替换为根目录的 `README.md`（即将其作为主 README），或需要我把某些具体段落翻译得更详尽（例如把 `app.py`、`mouse_movement.py` 的每个参数说明也翻译），请告诉我你允许包含的内容范围（注意：对于可能被滥用的自动化/实时操作说明，我会拒绝添加可执行细节）。
